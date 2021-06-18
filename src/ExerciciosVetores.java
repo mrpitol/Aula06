@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class ExerciciosVetores {
-
+         //Faça um programa que permita ao usuário digitar 30 atividades 
+		//que ele realizou no dia. Ao final, o programa deve possibilitar que o 
+		//usuário escolha se quer exibir as atividades na ordem em que digitou 
+		//ou em ordem reversa.
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner leitor = new Scanner(System.in);
