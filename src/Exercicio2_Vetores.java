@@ -49,6 +49,9 @@ public class Exercicio2_Vetores {
 				//média, exibir uma mensagem que diga “Chamar o aluno para 
 				//conversar”
 				
+				//Para essa etapa, percorrer o array, comparando cada uma das posições e comparando com a media. se for menor, exibir a mensagem
+				
+				
 				
 				
 				
