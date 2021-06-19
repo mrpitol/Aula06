@@ -52,11 +52,11 @@ public class Exercicio2_Vetores {
 				//Para essa etapa, percorrer o array, comparando cada uma das posições e comparando com a 				//media. se for menor, exibir a mensagem
 				for (int i=0; i<nomes.length;i++) {
 					if(notas[i]<(soma/quantidade)) {
-						System.out.println();
-						System.out.println("Chamar o aluno " + nomes[i] +" para conversar");
+						
+						System.out.println("\n Chamar o aluno " + nomes[i] +" para conversar");
 					}else {
-						System.out.println();
-						System.out.println("Aluno " + nomes[i] + " está Aprovado");
+						
+						System.out.println("\n Aluno " + nomes[i] + " está Aprovado");
 					}
 							
 				}
