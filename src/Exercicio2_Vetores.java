@@ -23,7 +23,7 @@ public class Exercicio2_Vetores {
 		// definir o tamanho do array a partir do que foi digitado pelo usuario
 				String nomes[] = new String[quantidade];
 				double notas[] = new double[quantidade];
-				double media=0;
+				double soma=0;
 		
 				//A. Digitar as 50 notas em um vetor e, para cada nota digitada, 
 				//digitar o nome do aluno correspondente em outro vetor
@@ -40,21 +40,27 @@ public class Exercicio2_Vetores {
 				//B. Calcular a média das notas digitadas
 				//Para calcular a média, fazer um loop para ir somando as notas e fora do loop dividir pela 				//quantidade de notas
 				for (int i=0; i<nomes.length;i++) {
-					media+=notas[i];
+					soma+=notas[i];
 					
 					}
-				System.out.println("A médias das notas dos "+ quantidade +" alunos é:" + media/quantidade);
+				System.out.println("A médias das notas dos "+ quantidade +" alunos é:" + soma/quantidade);
 				
 				//C. Para cada uma das notas que foi digitada e ficou abaixo da 
 				//média, exibir uma mensagem que diga “Chamar o aluno para 
 				//conversar”
 				
-				//Para essa etapa, percorrer o array, comparando cada uma das posições e comparando com a media. se for menor, exibir a mensagem
-				
-				
-				
-				
-				
+				//Para essa etapa, percorrer o array, comparando cada uma das posições e comparando com a 				//media. se for menor, exibir a mensagem
+				for (int i=0; i<nomes.length;i++) {
+					if(notas[i]<(soma/quantidade)) {
+						System.out.println();
+						System.out.println("Chamar o aluno " + nomes[i] +" para conversar");
+					}else {
+						System.out.println();
+						System.out.println("Aluno " + nomes[i] + " está Aprovado");
+					}
+							
+				}
+				leitor.close();				
 	}
   
 }
